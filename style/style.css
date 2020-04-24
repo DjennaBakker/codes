@@ -11,7 +11,11 @@ body {
   body p {
     font-family: 'Montserrat'; }
   body h2 {
-    text-decoration: underline solid black; }
+    text-decoration: underline solid black;
+    font-family: 'Impact', Arial;
+    font-size: 24px;
+    text-shadow: 2px 0px #FFCBCB;
+    text-align: center; }
   body .vl {
     border-left: 6px solid black;
     height: 100px;
@@ -123,7 +127,7 @@ a {
 .aboutme {
   background-color: #E2E2E2;
   padding: 50px;
-  height: 450px; }
+  height: 500px; }
   .aboutme .foto {
     display: none; }
     .aboutme .foto .box4, .aboutme .foto .box5 {
@@ -140,31 +144,37 @@ a {
       font-size: 16px; }
     .aboutme .informatie .cv {
       padding: 5px 10px;
-      margin-bottom: 20px;
       background-color: black;
       color: white;
       font-family: 'Impact', Arial;
       font-size: 20px;
       border: 5px solid black;
-      box-shadow: -2px 2px 19px -3px #5c5c5c; }
+      box-shadow: -2px 2px 19px -3px #5c5c5c;
+      transition: transform 2.5s; }
       .aboutme .informatie .cv:hover {
         background-color: #fff;
         border: 5px solid white;
-        color: black; }
+        color: black;
+        transform: rotate(360deg); }
     .aboutme .informatie .contact {
       padding: 5px 10px;
       margin-left: 15px;
-      margin-bottom: 20px;
       background-color: white;
       color: black;
       font-family: 'Impact', Arial;
       font-size: 20px;
       border: 5px solid white;
-      box-shadow: -2px 2px 19px -3px #5c5c5c; }
+      box-shadow: -2px 2px 19px -3px #5c5c5c;
+      transition: transform 2.5s; }
       .aboutme .informatie .contact:hover {
         background-color: #000;
         border: 5px solid black;
-        color: white; }
+        color: white;
+        transform: rotate(360deg); }
+    .aboutme .informatie .titel-skills {
+      font-family: 'Impact', Arial;
+      font-size: 24px;
+      margin: 25px 0px 20px 0px; }
     .aboutme .informatie .container {
       width: 100%;
       background-color: #707070; }
@@ -174,16 +184,33 @@ a {
       padding-bottom: 5px;
       padding-right: 10px;
       color: black; }
-    .aboutme .informatie .front {
-      width: 90%;
-      background-color: #fff; }
-    .aboutme .informatie .design {
-      width: 80%;
-      background-color: #fff; }
-    .aboutme .informatie .user {
-      width: 65%;
-      background-color: #fff; }
-
+    .aboutme .informatie .html {
+      width: 85%;
+      background-color: #fff;
+      animation: html 5s; }
+    .aboutme .informatie .css {
+      width: 60%;
+      background-color: #fff;
+      animation: css 5s; }
+    .aboutme .informatie .js {
+      width: 20%;
+      background-color: #fff;
+      animation: js 5s; }
+@keyframes html {
+  0% {
+    width: 0%; }
+  100% {
+    width: 85%; } }
+@keyframes css {
+  0% {
+    width: 0%; }
+  100% {
+    width: 60%; } }
+@keyframes js {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
 /*--------- contact sectie ---------------*/
 .contactopnemen {
   padding: 10px; }
@@ -264,38 +291,29 @@ footer {
       margin: 35px 0px 0px 150px; }
 
   /*--------- my work sectie ---------------*/
-  .work {
-    padding: 50px;
-    display: inline; }
-    .work .items-work {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px 25px 0px 25px; }
-      .work .items-work img {
-        width: 90%;
-        height: 90%;
-        padding: 20px; }
-        .work .items-work img:hover {
-          transform: scale(1.03);
-          box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.59); }
-      .work .items-work #aida, .work .items-work #aida1, .work .items-work #aida2 {
-        margin: 10px; }
-    .work a {
-      text-decoration: none; }
-      .work a:hover {
-        color: #FFCBCB; }
-    .work h3 {
-      font-family: 'Impact', Arial;
-      font-size: 18px; }
-    .work p {
-      font-size: 16px; }
-
-  .work-button {
-    padding: 50px;
-    background-color: black;
-    color: white;
-    display: list-item; }
+  .work .items-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px 0px 25px; }
+    .work .items-work img {
+      width: 90%;
+      height: 90%;
+      padding: 20px; }
+      .work .items-work img:hover {
+        transform: scale(1.03);
+        box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.59); }
+    .work .items-work #aida, .work .items-work #aida1, .work .items-work #aida2 {
+      margin: 10px; }
+  .work a {
+    text-decoration: none; }
+    .work a:hover {
+      color: #FFCBCB; }
+  .work h3 {
+    font-family: 'Impact', Arial;
+    font-size: 18px; }
+  .work p {
+    font-size: 16px; }
 
   h2 {
     font-family: 'Impact', Arial;
@@ -342,41 +360,20 @@ footer {
       padding: 5px; }
 
   /*--------- hero sectie ---------------*/
-  .hero {
-    background-color: #E2E2E2;
-    padding: 50px;
-    display: flex;
-    height: 100%;
-    box-sizing: border-box;
-    transform: scaleY(0);
-    transform-origin: bottom; }
-    .hero h1 {
-      font-size: 40px;
-      margin-top: 120px;
-      margin-left: 75px;
-      z-index: 1;
-      text-shadow: 2px 0px #FFCBCB;
-      opacity: 0; }
-    .hero .box1, .hero .box2, .hero .box3 {
-      border: 3px;
-      border-style: solid;
-      border-color: #707070;
-      width: 300px;
-      height: 300px;
-      margin-left: 50px;
-      margin-top: 50px;
-      position: absolute;
-      opacity: 0;
-      transform: scale(0); }
-    .hero .djenna {
-      width: 400px;
-      height: 400px;
-      margin-left: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      z-index: 1; }
+  .hero h1 {
+    font-size: 35px;
+    margin-top: 120px;
+    margin-left: 75px; }
+  .hero .box1, .hero .box2, .hero .box3 {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0); }
+  .hero .djenna {
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+    opacity: 0;
+    z-index: 1; }
 
   /*--------- my work sectie ---------------*/
   .work {
@@ -400,166 +397,62 @@ footer {
       text-decoration: none; }
       .work a:hover {
         color: #FFCBCB; }
-    .work .work-button {
-      padding: 50px;
-      background-color: black;
-      color: white;
-      display: list-item; }
     .work h2 {
-      font-family: 'Impact', Arial;
-      font-size: 50px;
-      text-shadow: 2px 0px #FFCBCB;
-      text-align: center; }
+      font-size: 50px; }
 
   /*--------- about me sectie ---------------*/
-  .aboutme {
-    background-color: #E2E2E2;
-    padding: 50px;
-    height: 550px; }
-    .aboutme .about {
-      float: left; }
-    .aboutme .foto {
-      width: 40%;
-      padding: 50px 0px 0px 0px; }
-      .aboutme .foto .box4, .aboutme .foto .box5 {
-        border: 3px;
-        border-style: solid;
-        border-color: white;
-        width: 225px;
-        height: 225px;
-        margin-left: 50px;
-        margin-top: 50px;
-        position: absolute; }
-      .aboutme .foto .box4 {
-        transform: rotate(30deg); }
-      .aboutme .foto .box5 {
-        transform: rotate(60deg); }
-      .aboutme .foto img {
-        width: 70%;
-        height: 100%; }
-    .aboutme .informatie {
-      width: 60%; }
-      .aboutme .informatie h2 {
-        text-align: left;
-        margin: 0px 0px 25px 0px; }
-      .aboutme .informatie h3 {
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        margin: 0px; }
-      .aboutme .informatie p {
-        font-size: 16px; }
-      .aboutme .informatie .cv {
-        padding: 10px 40px;
-        margin-bottom: 45px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px #5c5c5c; }
-        .aboutme .informatie .cv:hover {
-          background-color: #fff;
-          border: 5px solid white;
-          color: black; }
-      .aboutme .informatie .contact {
-        padding: 10px 40px;
-        margin-left: 15px;
-        margin-bottom: 45px;
-        background-color: white;
-        color: black;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid white;
-        box-shadow: -2px 2px 19px -3px #5c5c5c; }
-        .aboutme .informatie .contact:hover {
-          background-color: #000;
-          border: 5px solid black;
-          color: white; }
-      .aboutme .informatie .container {
-        width: 100%;
-        /* Full width */
-        background-color: #707070;
-        /* Grey background */ }
-      .aboutme .informatie .skills {
-        text-align: right;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-        color: black; }
-      .aboutme .informatie .front {
-        width: 90%;
-        background-color: #fff; }
-      .aboutme .informatie .design {
-        width: 80%;
-        background-color: #fff; }
-      .aboutme .informatie .user {
-        width: 65%;
-        background-color: #fff; }
+  .aboutme .about {
+    float: left; }
+  .aboutme .foto {
+    display: block;
+    width: 40%;
+    padding: 50px 0px 0px 0px; }
+    .aboutme .foto .box4, .aboutme .foto .box5 {
+      display: block;
+      border: 3px;
+      border-style: solid;
+      border-color: white;
+      width: 225px;
+      height: 225px;
+      margin-left: 10px;
+      margin-top: 15px;
+      position: absolute; }
+    .aboutme .foto .box4 {
+      transform: rotate(30deg); }
+    .aboutme .foto .box5 {
+      transform: rotate(60deg); }
+    .aboutme .foto img {
+      width: 70%;
+      height: 100%; }
+  .aboutme .informatie {
+    width: 60%; }
+    .aboutme .informatie h2 {
+      text-align: left;
+      margin: 0px 0px 25px 0px; }
+    .aboutme .informatie .cv {
+      padding: 5px 20px;
+      font-size: 20px; }
+    .aboutme .informatie .contact {
+      padding: 5px 20px;
+      margin-left: 15px;
+      font-size: 20px; }
+    .aboutme .informatie .titel-skills {
+      margin: 25px 0px 10px 0px; }
 
   /*--------- contact sectie ---------------*/
   .contactopnemen {
-    padding: 10px; }
-    .contactopnemen .formulier {
-      max-width: 1000px;
-      margin: auto; }
-      .contactopnemen .formulier .fname {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        border: none; }
-      .contactopnemen .formulier .lname {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        padding: 15px;
-        border: none; }
-      .contactopnemen .formulier .message {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 250px;
-        padding: 15px;
-        border: none;
-        margin-bottom: 20px; }
-      .contactopnemen .formulier .submit {
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 20px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px #5c5c5c;
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 45px; }
-        .contactopnemen .formulier .submit:hover {
-          background-color: #fff;
-          border: 5px solid white;
-          color: black; }
+    padding: 20px; }
 
   /*--------- footer sectie ---------------*/
-  footer {
-    background-color: #FFCBCB;
-    padding: 10px;
-    text-align: center; }
-    footer .footer-logo {
-      padding: 25px; }
-      footer .footer-logo .logo {
-        width: 7%; }
-    footer .footer-menu a {
-      text-decoration: none;
-      padding: 25px 10px 25px 10px; }
-    footer .footer-tekst {
-      padding: 25px 0px; }
-    footer .footer-icons .icons {
-      width: 25px;
-      padding: 5px; }
-    footer .footer-icons a {
-      text-decoration: none; } }
+  footer .logo {
+    width: 10%; }
+  footer .footer-menu a {
+    font-size: 20px; }
+
+  body h2 {
+    font-size: 32px; } }
 /*Grote desktop*/
 @media only screen and (min-width: 1440px) {
-  /*--------- header/nav sectie ---------------*/
   .navigatie {
     display: flex;
     padding: 10px; }
@@ -596,43 +489,20 @@ footer {
       padding: 5px; }
 
   /*--------- hero sectie ---------------*/
-  .hero {
-    background-color: #E2E2E2;
-    padding: 50px;
-    display: flex;
-    align-content: center;
+  .hero h1 {
+    font-size: 45px;
+    margin-top: 140px;
+    margin-left: 195px; }
+  .hero .box1, .hero .box2, .hero .box3 {
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 50px;
+    transform: scale(0); }
+  .hero .djenna {
+    width: 35%;
     height: 100%;
-    box-sizing: border-box;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    padding-left: 5%;
-    padding-right: 5%; }
-    .hero h1 {
-      font-size: 45px;
-      margin-top: 175px;
-      margin-left: 125px;
-      z-index: 1;
-      text-shadow: 2px 0px #FFCBCB;
-      opacity: 0; }
-    .hero .box1, .hero .box2, .hero .box3 {
-      border: 3px;
-      border-style: solid;
-      border-color: #707070;
-      width: 400px;
-      height: 400px;
-      margin-left: 50px;
-      margin-top: 50px;
-      position: absolute;
-      opacity: 0;
-      transform: scale(0); }
-    .hero .djenna {
-      width: 35%;
-      height: 100%;
-      margin-left: 350px;
-      display: flex;
-      opacity: 0;
-      z-index: 1;
-      vertical-align: middle; }
+    margin-left: 300px; }
 
   /*--------- my work sectie ---------------*/
   .work {
@@ -657,162 +527,46 @@ footer {
       .work .items-work #aida, .work .items-work #aida1, .work .items-work #aida2 {
         margin: 10px; }
 
-  .work-button {
-    padding: 50px;
-    background-color: black;
-    color: white; }
-
-  h2 {
-    font-family: 'Impact', Arial;
-    font-size: 50px;
-    text-shadow: 4px 0px #FFCBCB;
-    text-align: center; }
-
   /*--------- about me sectie ---------------*/
-  .aboutme {
-    background-color: #E2E2E2;
-    padding: 50px;
-    height: 550px; }
-    .aboutme .about {
-      float: left; }
-    .aboutme .foto {
-      width: 40%;
-      padding: 75px 0px 0px 0px; }
-      .aboutme .foto .box4, .aboutme .foto .box5 {
-        border: 3px;
-        border-style: solid;
-        border-color: white;
-        width: 300px;
-        height: 300px;
-        margin-left: 50px;
-        margin-top: 50px;
-        position: absolute; }
-      .aboutme .foto .box4 {
-        transform: rotate(30deg); }
-      .aboutme .foto .box5 {
-        transform: rotate(60deg); }
-      .aboutme .foto img {
-        width: 60%;
-        height: 100%; }
-    .aboutme .informatie {
-      width: 60%; }
-      .aboutme .informatie h2 {
-        text-align: left;
-        margin: 0px 0px 25px 0px; }
-      .aboutme .informatie h3 {
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        margin: 0px; }
-      .aboutme .informatie p {
-        font-size: 16px; }
-      .aboutme .informatie .cv {
-        padding: 10px 40px;
-        margin-bottom: 45px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px #5c5c5c; }
-        .aboutme .informatie .cv:hover {
-          background-color: #fff;
-          border: 5px solid white;
-          color: black; }
-      .aboutme .informatie .contact {
-        padding: 10px 40px;
-        margin-left: 15px;
-        margin-bottom: 45px;
-        background-color: white;
-        color: black;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid white;
-        box-shadow: -2px 2px 19px -3px #5c5c5c; }
-        .aboutme .informatie .contact:hover {
-          background-color: #000;
-          border: 5px solid black;
-          color: white; }
-      .aboutme .informatie .container {
-        width: 100%;
-        /* Full width */
-        background-color: #707070;
-        /* Grey background */ }
-      .aboutme .informatie .skills {
-        text-align: right;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-        color: black; }
-      .aboutme .informatie .front {
-        width: 90%;
-        background-color: #fff; }
-      .aboutme .informatie .design {
-        width: 80%;
-        background-color: #fff; }
-      .aboutme .informatie .user {
-        width: 65%;
-        background-color: #fff; }
+  .aboutme .about {
+    float: left; }
+  .aboutme .foto {
+    display: block;
+    width: 35%;
+    padding: 50px 0px 0px 50px; }
+    .aboutme .foto .box4, .aboutme .foto .box5 {
+      display: block;
+      border: 3px;
+      border-style: solid;
+      border-color: white;
+      width: 300px;
+      height: 300px;
+      margin-left: 10px;
+      margin-top: 15px;
+      position: absolute; }
+    .aboutme .foto .box4 {
+      transform: rotate(30deg); }
+    .aboutme .foto .box5 {
+      transform: rotate(60deg); }
+    .aboutme .foto img {
+      width: 60%;
+      height: 100%; }
+  .aboutme .informatie {
+    width: 60%; }
+    .aboutme .informatie h2 {
+      text-align: left;
+      margin: 0px 0px 25px 0px; }
+    .aboutme .informatie .cv {
+      padding: 5px 20px;
+      font-size: 20px; }
+    .aboutme .informatie .contact {
+      padding: 5px 20px;
+      margin-left: 15px;
+      font-size: 20px; }
+    .aboutme .informatie .titel-skills {
+      margin: 25px 0px 10px 0px; }
 
-  /*--------- contact sectie ---------------*/
-  .contactopnemen {
-    padding: 10px; }
-    .contactopnemen .formulier {
-      max-width: 1000px;
-      margin: auto; }
-      .contactopnemen .formulier .fname {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        border: none; }
-      .contactopnemen .formulier .lname {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        padding: 15px;
-        border: none; }
-      .contactopnemen .formulier .message {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 250px;
-        padding: 15px;
-        border: none;
-        margin-bottom: 20px; }
-      .contactopnemen .formulier .submit {
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 20px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px #5c5c5c;
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 45px; }
-        .contactopnemen .formulier .submit:hover {
-          background-color: #fff;
-          border: 5px solid white;
-          color: black; }
-
-  /*--------- footer sectie ---------------*/
-  footer {
-    background-color: #FFCBCB;
-    padding: 10px;
-    text-align: center; }
-    footer .footer-logo {
-      padding: 25px; }
-      footer .footer-logo .logo {
-        width: 7%; }
-    footer .footer-menu a {
-      text-decoration: none;
-      padding: 25px 10px 25px 10px; }
-    footer .footer-tekst {
-      padding: 25px 0px; }
-    footer .footer-icons .icons {
-      width: 25px;
-      padding: 5px; }
-    footer .footer-icons a {
-      text-decoration: none; } }
+  body h2 {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

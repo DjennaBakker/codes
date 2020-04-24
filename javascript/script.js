@@ -10,4 +10,3 @@ window.onload = function() {
     TweenLite.to('.box2', 2, {rotation:30});
     TweenLite.to('.box3', 2, {rotation:60});
 }
-

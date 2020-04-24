@@ -11,13 +11,19 @@ body{
   		font-family: 'Impact', Arial;
   		font-size: 35px;
   	}
+
   	p{
   		font-family: 'Montserrat';
   	}
+
     h2{
       text-decoration: underline solid black;
-
+      font-family: 'Impact', Arial;
+      font-size: 24px;
+      text-shadow: 2px 0px #FFCBCB;
+      text-align: center;
     }
+
     .vl {
       border-left: 6px solid black;
       height: 100px;
@@ -28,7 +34,7 @@ body{
       margin-top: 50px;
       margin-bottom: 50px;
     }
-}
+} //einde body
 
 /*--------- header/nav sectie ---------------*/
 .navigatie{
@@ -100,7 +106,7 @@ body{
   .icon{
     display: none;
   }
-}
+} //einde .navigatie
 
 a{
   color: black;
@@ -165,16 +171,15 @@ a{
       justify-content: center;
       align-items: center;
       opacity: 0;
-      // transform: scale(0);
       z-index: 1;
     }
-}
+} //einde .hero
 
 /*--------- about me sectie ---------------*/
   .aboutme{
     background-color: #E2E2E2;
     padding: 50px;
-    height: 450px;
+    height: 500px;
 
     .about{
     }
@@ -206,37 +211,45 @@ a{
 
       .cv{
         padding: 5px 10px;
-        margin-bottom: 20px;
         background-color: black;
         color: white;
         font-family: 'Impact', Arial;
         font-size: 20px;
         border: 5px solid black;
         box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+        transition: transform 2.5s;
 
         &:hover{
           background-color: #fff;
           border: 5px solid white;
           color: black;
+          transform: rotate(360deg);
         }
       }
 
       .contact{
         padding: 5px 10px;
         margin-left: 15px;
-        margin-bottom: 20px;
         background-color: white;
         color: black;
         font-family: 'Impact', Arial;
         font-size: 20px;
         border: 5px solid white;
         box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+        transition: transform 2.5s;
 
         &:hover{
           background-color: #000;
           border: 5px solid black;
           color: white;
+          transform: rotate(360deg);
         }
+      }
+      
+      .titel-skills{
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        margin: 25px 0px 20px 0px;
       }
 
       .container {
@@ -252,23 +265,53 @@ a{
         color: black;
       }
 
-      .front {
-        width: 90%; 
+      .html {
+        width: 85%; 
         background-color: #fff;
+        animation: html 5s;
       }
       
-      .design {
-        width: 80%; 
+      .css{
+        width: 60%; 
         background-color: #fff;
+        animation: css 5s;
       }
 
-      .user {
-        width: 65%; 
+      .js {
+        width: 20%; 
         background-color: #fff;
+        animation: js 5s;
+      }
+
+      @keyframes html{
+        0%{
+          width: 0%;
+        }
+        100%{
+          width: 85%;
+        }
+      }
+
+      @keyframes css{
+        0%{
+          width: 0%;
+        }
+        100%{
+          width: 60%;
+        }
+      }
+
+      @keyframes js{
+        0%{
+          width: 0%;
+        }
+        100%{
+          width: 20%;
+        }
       }
     }
   
-  }
+  } //einde .aboutme
   
   /*--------- contact sectie ---------------*/
   .contactopnemen{
@@ -324,7 +367,7 @@ a{
         }
       }
     }
-  }
+  } //einde .contactopnemen
   
   /*--------- footer sectie ---------------*/
   footer{
@@ -362,7 +405,7 @@ a{
         }
           
       }
-  }
+  } //einde footer
 
 
 /*Tablet*/
@@ -376,7 +419,7 @@ a{
     .logo{
       width: 5%;
     }
-  }
+  } //einde .navigatie
 
 /*--------- hero sectie ---------------*/
   .hero{
@@ -390,12 +433,10 @@ a{
     .djenna{
       margin: 35px 0px 0px 150px;
     }
-  }
+  } //einde .hero
 
 /*--------- my work sectie ---------------*/ 
   .work{
-    padding: 50px;
-    display: inline;
     
     .items-work{
       display: flex;
@@ -437,20 +478,13 @@ a{
     }
   }
 
-  .work-button{
-    padding: 50px;
-    background-color: black;
-    color: white;
-    display: list-item;
-  }
-
   h2{
     font-family: 'Impact', Arial;
     font-size: 30px;
     text-shadow: 2px 0px #FFCBCB;
     text-align: center;
   }
-}
+} //einde .work
 
 /*Laptop*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
@@ -509,35 +543,34 @@ a{
       margin-top: 50px;
       padding: 5px;
     }
-  }
+  } //einde .navigatie
 
 /*--------- hero sectie ---------------*/
   .hero{
-    background-color: #E2E2E2;
-    padding: 50px;
-    display: flex;
-    height: 100%;
-    box-sizing: border-box;
-    transform: scaleY(0);
-    transform-origin: bottom;
+    // padding: 50px;
+    // display: flex;
+    // height: 100%;
+    // box-sizing: border-box;
+    // transform: scaleY(0);
+    // transform-origin: bottom;
 
     h1{
-      font-size: 40px;
+      font-size: 35px;
       margin-top: 120px;
       margin-left: 75px;
-      z-index: 1;
-      text-shadow: 2px 0px #FFCBCB;
-      opacity: 0;
+      // z-index: 1;
+      // text-shadow: 2px 0px #FFCBCB;
+      // opacity: 0;
     }
 
     .box1, .box2, .box3 {
-      border: 3px;
-      border-style: solid;
-      border-color: #707070;
-      width: 300px;
-      height: 300px;
-      margin-left: 50px;
-      margin-top: 50px;
+      // border: 3px;
+      // border-style: solid;
+      // border-color: #707070;
+      // width: 300px;
+      // height: 300px;
+      // margin-left: 50px;
+      // margin-top: 50px;
       position: absolute;
       opacity: 0;
       transform: scale(0);
@@ -546,14 +579,14 @@ a{
     .djenna{
       width: 400px;
       height: 400px;
-      margin-left: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-left: 150px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       opacity: 0;
       z-index: 1;
     }
-  }
+  } //einde .hero
 
 /*--------- my work sectie ---------------*/
   .work{
@@ -582,51 +615,40 @@ a{
       }
     }
 
-  a{
-    text-decoration: none;
+    a{
+      text-decoration: none;
 
-    &:hover{
-      color: #FFCBCB;
+      &:hover{
+        color: #FFCBCB;
+      }
     }
-  }
 
-  .work-button{
-    padding: 50px;
-    background-color: black;
-    color: white;
-    display: list-item;
-  }
-
-  h2{
-    font-family: 'Impact', Arial;
-    font-size: 50px;
-    text-shadow: 2px 0px #FFCBCB;
-    text-align: center;
-  }
-}
+    h2{
+      font-size: 50px;
+    }
+} //einde .work
 
 /*--------- about me sectie ---------------*/
   .aboutme{
-    background-color: #E2E2E2;
-    padding: 50px;
-    height: 550px;
 
     .about{
       float: left;
     }
     
     .foto{
+      display: block;
       width: 40%;
       padding: 50px 0px 0px 0px;
     
       .box4, .box5 {
+        display: block;
         border: 3px;
         border-style: solid;
         border-color: white;
         width: 225px;
         height: 225px;
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 10px;
+        margin-top: 15px;
         position: absolute;
      }
 
@@ -651,193 +673,50 @@ a{
         margin: 0px 0px 25px 0px;
       }
 
-      h3{
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        margin: 0px;
-      }
-
-      p{
-        font-size: 16px;
-      }
-
       .cv{
-        padding: 10px 40px;
-        margin-bottom: 45px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-
-        &:hover{
-          background-color: #fff;
-          border: 5px solid white;
-          color: black;
-        }
+        padding: 5px 20px;
+        font-size: 20px;
       }
 
       .contact{
-        padding: 10px 40px;
+        padding: 5px 20px;
         margin-left: 15px;
-        margin-bottom: 45px;
-        background-color: white;
-        color: black;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid white;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-
-        &:hover{
-          background-color: #000;
-          border: 5px solid black;
-          color: white;
-        }
+        font-size: 20px;
       }
 
-      .container {
-        width: 100%; /* Full width */
-        background-color: #707070; /* Grey background */
-      }
-
-      .skills {
-        text-align: right;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-        color: black;
-      }
-
-      .front {
-        width: 90%; 
-        background-color: #fff;
-      }
-      
-      .design {
-        width: 80%; 
-        background-color: #fff;
-      }
-
-      .user {
-        width: 65%; 
-        background-color: #fff;
+      .titel-skills{
+        margin: 25px 0px 10px 0px;
       }
     }
-  
-  }
-  
+  } //einde .aboutme
+
   /*--------- contact sectie ---------------*/
   .contactopnemen{
-    padding: 10px;
-    // text-align: center;
-
-
-    .formulier{
-      // width: 75%;
-      // display: grid;
-      // justify-content: center;
-      max-width: 1000px;
-      margin: auto;
-      
-      .fname{
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        border: none;
-      }
-
-      .lname{
-        background-color: #E2E2E2;
-        // float: right;
-        width: 1000px;
-        height: 20px;
-        padding: 15px;
-        border: none;
-      }
-      
-      .message {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 250px;
-        padding: 15px;
-        border: none;
-        margin-bottom: 20px;
-      }
-
-      .submit{
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 20px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 45px;
-
-        &:hover{
-          background-color: #fff;
-          border: 5px solid white;
-          color: black;
-        }
-      }
-    }
-  }
+    padding: 20px;
+  } //einde .contactopnemen
   
   /*--------- footer sectie ---------------*/
   footer{
-    background-color: #FFCBCB;
-    padding: 10px;
-    // max-width: 1000px;
-    // margin: auto;
-    text-align: center;
+    .logo{
+      width: 10%;
+    }
 
-      .footer-logo{
-        padding: 25px;
+    .footer-menu a{
+      font-size: 20px;
+    }
+  } //einde footer
 
-        .logo{
-          width: 7%;
-        }
-      }
-
-      .footer-menu a{
-        text-decoration: none;
-        padding: 25px 10px 25px 10px;
-      }
-
-      .footer-tekst{
-        padding: 25px 0px;
-      }
-
-      .footer-icons{
-        .icons{
-          width: 25px;
-          padding: 5px;
-        }
-
-        a{
-          text-decoration: none;
-        }
-          
-      }
-
-
+  body h2{
+    font-size: 32px;
   }
-
 
 }//einde laptop
 
 /*Grote desktop*/
 @media only screen and (min-width: 1440px){
-/*--------- header/nav sectie ---------------*/
+// /*--------- header/nav sectie ---------------*/
   .navigatie{
     display: flex;
-    // justify-content: center;
-    // align-content: center;
     padding: 10px;
     
     .logo{
@@ -889,78 +768,38 @@ a{
       margin-top: 50px;
       padding: 5px;
     }
-  }
+  } //einde .navigatie
 
 /*--------- hero sectie ---------------*/
   .hero{
-  background-color: #E2E2E2;
-  padding: 50px;
-  display: flex;
-  align-content: center;
-  height: 100%;
-  box-sizing: border-box;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  padding-left: 5%;
-  padding-right: 5%;
 
     h1{
       font-size: 45px;
-      margin-top: 175px;
-      margin-left: 125px;
-      z-index: 1;
-      text-shadow: 2px 0px #FFCBCB;
-      opacity: 0;
+      margin-top: 140px;
+      margin-left: 195px;
     }
 
     .box1, .box2, .box3 {
-      border: 3px;
-      border-style: solid;
-      border-color: #707070;
       width: 400px;
       height: 400px;
-      margin-left: 50px;
+      margin-left: 150px;
       margin-top: 50px;
-      position: absolute;
-      opacity: 0;
       transform: scale(0);
-    }
-
-    .box1{
-      // transform: rotate(-9deg);
-    }
-
-    .box2{
-      // transform: rotate(30deg);
-    }
-
-    .box3{
-      // transform: rotate(60deg);
     }
     
     .djenna{
       width: 35%;
       height: 100%;
-      margin-left: 350px;
-      display: flex;
-      // justify-content: center;
-      // align-items: center;
-      opacity: 0;
-      // transform: scale(0);
-      z-index: 1;
-      vertical-align: middle;
+      margin-left: 300px;
     }
-  }
+  } //einde .hero
 
 /*--------- my work sectie ---------------*/  
   .work{
     padding: 50px;
     display: inline;
-    // justify-content: center;
-    // align-items: center;
     
     .items-work{
-      // float: left;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -988,50 +827,30 @@ a{
         margin: 10px;
       }
     }
-  }
+  } //einde .work
 
-  .work-button{
-    padding: 50px;
-    background-color: black;
-    color: white;
-  }
-
-  
-
-  h2{
-    font-family: 'Impact', Arial;
-    font-size: 50px;
-    text-shadow: 4px 0px #FFCBCB;
-    text-align: center;
-  }
-
-/*--------- about me sectie ---------------*/
+/*--------- about me sectie ---------------*/  
   .aboutme{
-    background-color: #E2E2E2;
-    padding: 50px;
-    height: 550px;
 
     .about{
       float: left;
     }
     
     .foto{
-      width: 40%;
-      padding: 75px 0px 0px 0px;
+      display: block;
+      width: 35%;
+      padding: 50px 0px 0px 50px;
     
       .box4, .box5 {
+        display: block;
         border: 3px;
         border-style: solid;
-        // border-color: #707070;
         border-color: white;
         width: 300px;
         height: 300px;
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 10px;
+        margin-top: 15px;
         position: absolute;
-
-        // opacity: 0;
-        // transform: scale(0);
      }
 
      .box4{
@@ -1055,178 +874,122 @@ a{
         margin: 0px 0px 25px 0px;
       }
 
-      h3{
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        margin: 0px;
-      }
-
-      p{
-        font-size: 16px;
-      }
-
       .cv{
-        padding: 10px 40px;
-        margin-bottom: 45px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-
-        &:hover{
-          background-color: #fff;
-          border: 5px solid white;
-          color: black;
-        }
+        padding: 5px 20px;
+        font-size: 20px;
       }
 
       .contact{
-        padding: 10px 40px;
+        padding: 5px 20px;
         margin-left: 15px;
-        margin-bottom: 45px;
-        background-color: white;
-        color: black;
-        font-family: 'Impact', Arial;
-        font-size: 24px;
-        border: 5px solid white;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-
-        &:hover{
-          background-color: #000;
-          border: 5px solid black;
-          color: white;
-        }
-      }
-
-      .container {
-        width: 100%; /* Full width */
-        background-color: #707070; /* Grey background */
-      }
-
-      .skills {
-        text-align: right;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 10px;
-        color: black;
-      }
-
-      .front {
-        width: 90%; 
-        background-color: #fff;
-      }
-      
-      .design {
-        width: 80%; 
-        background-color: #fff;
-      }
-
-      .user {
-        width: 65%; 
-        background-color: #fff;
-      }
-    }
-  
-  }
-  
-  /*--------- contact sectie ---------------*/
-  .contactopnemen{
-    padding: 10px;
-    // text-align: center;
-
-
-    .formulier{
-      // width: 75%;
-      // display: grid;
-      // justify-content: center;
-      max-width: 1000px;
-      margin: auto;
-      
-      .fname{
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 20px;
-        margin-bottom: 20px;
-        padding: 15px;
-        border: none;
-      }
-
-      .lname{
-        background-color: #E2E2E2;
-        // float: right;
-        width: 1000px;
-        height: 20px;
-        padding: 15px;
-        border: none;
-      }
-      
-      .message {
-        background-color: #E2E2E2;
-        width: 1000px;
-        height: 250px;
-        padding: 15px;
-        border: none;
-        margin-bottom: 20px;
-      }
-
-      .submit{
-        padding: 10px 20px;
-        background-color: black;
-        color: white;
-        font-family: 'Impact', Arial;
         font-size: 20px;
-        border: 5px solid black;
-        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 45px;
+      }
 
-        &:hover{
-          background-color: #fff;
-          border: 5px solid white;
-          color: black;
-        }
+      .titel-skills{
+        margin: 25px 0px 10px 0px;
       }
     }
-  }
+  } //einde .aboutme
   
-  /*--------- footer sectie ---------------*/
-  footer{
-    background-color: #FFCBCB;
-    padding: 10px;
-    // max-width: 1000px;
-    // margin: auto;
-    text-align: center;
+//   /*--------- contact sectie ---------------*/
+//   .contactopnemen{
+//     padding: 10px;
+//     // text-align: center;
 
-      .footer-logo{
-        padding: 25px;
 
-        .logo{
-          width: 7%;
-        }
-      }
+//     .formulier{
+//       // width: 75%;
+//       // display: grid;
+//       // justify-content: center;
+//       max-width: 1000px;
+//       margin: auto;
+      
+//       .fname{
+//         background-color: #E2E2E2;
+//         width: 1000px;
+//         height: 20px;
+//         margin-bottom: 20px;
+//         padding: 15px;
+//         border: none;
+//       }
 
-      .footer-menu a{
-        text-decoration: none;
-        padding: 25px 10px 25px 10px;
-      }
+//       .lname{
+//         background-color: #E2E2E2;
+//         // float: right;
+//         width: 1000px;
+//         height: 20px;
+//         padding: 15px;
+//         border: none;
+//       }
+      
+//       .message {
+//         background-color: #E2E2E2;
+//         width: 1000px;
+//         height: 250px;
+//         padding: 15px;
+//         border: none;
+//         margin-bottom: 20px;
+//       }
 
-      .footer-tekst{
-        padding: 25px 0px;
-      }
+//       .submit{
+//         padding: 10px 20px;
+//         background-color: black;
+//         color: white;
+//         font-family: 'Impact', Arial;
+//         font-size: 20px;
+//         border: 5px solid black;
+//         box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+//         margin: 0 auto;
+//         display: block;
+//         margin-bottom: 45px;
 
-      .footer-icons{
-        .icons{
-          width: 25px;
-          padding: 5px;
-        }
+//         &:hover{
+//           background-color: #fff;
+//           border: 5px solid white;
+//           color: black;
+//         }
+//       }
+//     }
+//   }
+  
+//   /*--------- footer sectie ---------------*/
+//   footer{
+//     background-color: #FFCBCB;
+//     padding: 10px;
+//     // max-width: 1000px;
+//     // margin: auto;
+//     text-align: center;
 
-        a{
-          text-decoration: none;
-        }
+//       .footer-logo{
+//         padding: 25px;
+
+//         .logo{
+//           width: 7%;
+//         }
+//       }
+
+//       .footer-menu a{
+//         text-decoration: none;
+//         padding: 25px 10px 25px 10px;
+//       }
+
+//       .footer-tekst{
+//         padding: 25px 0px;
+//       }
+
+//       .footer-icons{
+//         .icons{
+//           width: 25px;
+//           padding: 5px;
+//         }
+
+//         a{
+//           text-decoration: none;
+//         }
           
-      }
+//       }
+//   }
+  body h2{
+    font-size: 40px;
   }
 } //einde van grote desktop
