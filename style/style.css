@@ -240,7 +240,7 @@ a {
       padding: 15px;
       border: none;
       margin-bottom: 20px; }
-    .contactopnemen .formulier .submit {
+    .contactopnemen .formulier button {
       padding: 10px 20px;
       background-color: black;
       color: white;
@@ -251,7 +251,7 @@ a {
       margin: 0 auto;
       display: block;
       margin-bottom: 45px; }
-      .contactopnemen .formulier .submit:hover {
+      .contactopnemen .formulier button:hover {
         background-color: #fff;
         border: 5px solid white;
         color: black; }
