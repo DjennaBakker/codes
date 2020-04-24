@@ -14,6 +14,20 @@ body{
   	p{
   		font-family: 'Montserrat';
   	}
+    h2{
+      text-decoration: underline solid black;
+
+    }
+    .vl {
+      border-left: 6px solid black;
+      height: 100px;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      left: 50%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
 }
 
 /*--------- header/nav sectie ---------------*/
@@ -103,6 +117,7 @@ a{
   transform-origin: bottom;
 
     h1{
+      font-size: 30px;
     	margin-top: 115px;
     	margin-left: 77px;
     	z-index: 1;
@@ -139,7 +154,6 @@ a{
       filter: grayscale(100%);;
         &:hover{
           filter: none;
-          // border-radius: 500px;
         }
     }
 
@@ -156,7 +170,226 @@ a{
     }
 }
 
-/*--------- my work sectie ---------------*/
+/*--------- about me sectie ---------------*/
+  .aboutme{
+    background-color: #E2E2E2;
+    padding: 50px;
+    height: 550px;
+
+    .about{
+      float: left;
+    }
+    
+    .foto{
+      width: 40%;
+      padding: 75px 0px 0px 0px;
+    
+      .box4, .box5 {
+        border: 3px;
+        border-style: solid;
+        border-color: white;
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+        margin-top: 50px;
+        position: absolute;
+     }
+
+     .box4{
+      transform: rotate(30deg);
+     }
+     .box5{
+      transform: rotate(60deg);
+     }
+
+      img{
+        width: 80%;
+        height: 100%;
+      }
+    }
+
+    .informatie{
+      width: 60%;
+
+      h2{
+        text-align: left;
+        margin: 0px 0px 25px 0px;
+      }
+
+      h3{
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        margin: 0px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+
+      .cv{
+        padding: 10px 40px;
+        margin-bottom: 45px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
+
+      .contact{
+        padding: 10px 40px;
+        margin-left: 15px;
+        margin-bottom: 45px;
+        background-color: white;
+        color: black;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid white;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #000;
+          border: 5px solid black;
+          color: white;
+        }
+      }
+
+      .container {
+        width: 100%;
+        background-color: #707070; 
+      }
+
+      .skills {
+        text-align: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        color: black;
+      }
+
+      .front {
+        width: 90%; 
+        background-color: #fff;
+      }
+      
+      .design {
+        width: 80%; 
+        background-color: #fff;
+      }
+
+      .user {
+        width: 65%; 
+        background-color: #fff;
+      }
+    }
+  
+  }
+  
+  /*--------- contact sectie ---------------*/
+  .contactopnemen{
+    padding: 10px;
+    // text-align: center;
+
+
+    .formulier{
+      // width: 75%;
+      // display: grid;
+      // justify-content: center;
+      max-width: 500px;
+      margin: auto;
+      
+      .fname{
+        background-color: #E2E2E2;
+        width: 500px;
+        height: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: none;
+      }
+
+      .lname{
+        background-color: #E2E2E2;
+        // float: right;
+        width: 500px;
+        height: 20px;
+        padding: 15px;
+        border: none;
+      }
+      
+      .message {
+        background-color: #E2E2E2;
+        width: 500px;
+        height: 250px;
+        padding: 15px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .submit{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 20px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 45px;
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
+    }
+  }
+  
+  /*--------- footer sectie ---------------*/
+  footer{
+    background-color: #FFCBCB;
+    padding: 10px;
+    // max-width: 1000px;
+    // margin: auto;
+    text-align: center;
+
+      .footer-logo{
+        padding: 25px;
+
+        .logo{
+          width: 7%;
+        }
+      }
+
+      .footer-menu a{
+        text-decoration: none;
+        padding: 25px 10px 25px 10px;
+      }
+
+      .footer-tekst{
+        padding: 25px 0px;
+      }
+
+      .footer-icons{
+        .icons{
+          width: 25px;
+          padding: 5px;
+        }
+
+        a{
+          text-decoration: none;
+        }
+          
+      }
+  }
 
 
 /*Tablet*/
@@ -176,6 +409,10 @@ a{
   .hero{
     padding: 100px 35px 35px 35px;
     height: 500px;
+    
+    h1{
+      font-size: 35px;
+    }
 
     .djenna{
       margin: 35px 0px 0px 150px;
@@ -186,11 +423,8 @@ a{
   .work{
     padding: 50px;
     display: inline;
-    // justify-content: center;
-    // align-items: center;
     
     .items-work{
-      // float: left;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -315,6 +549,7 @@ a{
     transform-origin: bottom;
 
     h1{
+      font-size: 40px;
       margin-top: 120px;
       margin-left: 75px;
       z-index: 1;
@@ -334,26 +569,6 @@ a{
       opacity: 0;
       transform: scale(0);
     }
-
-    // .box1{
-    //   transform: rotate(-9deg);
-    // }
-
-    // .box2{
-    //   transform: rotate(30deg);
-    // }
-
-    // .box3{
-    //   transform: rotate(60deg);
-    // }
-
-    // img{
-    //   filter: grayscale(100%);;
-    //     &:hover{
-    //       filter: none;
-    //       border-radius: 500px;
-    //     }
-    // }
   
     .djenna{
       width: 400px;
@@ -363,7 +578,6 @@ a{
       justify-content: center;
       align-items: center;
       opacity: 0;
-      // transform: scale(0);
       z-index: 1;
     }
   }
@@ -372,11 +586,8 @@ a{
   .work{
     padding: 50px;
     display: inline;
-    // justify-content: center;
-    // align-items: center;
     
     .items-work{
-      // float: left;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -406,7 +617,6 @@ a{
     }
   }
 
-
   .work-button{
     padding: 50px;
     background-color: black;
@@ -425,25 +635,228 @@ a{
 /*--------- about me sectie ---------------*/
   .aboutme{
     background-color: #E2E2E2;
+    padding: 50px;
+    height: 550px;
 
+    .about{
+      float: left;
+    }
+    
+    .foto{
+      width: 40%;
+      padding: 50px 0px 0px 0px;
+    
       .box4, .box5 {
         border: 3px;
         border-style: solid;
-        border-color: #707070;
-        width: 300px;
-        height: 300px;
+        border-color: white;
+        width: 225px;
+        height: 225px;
         margin-left: 50px;
         margin-top: 50px;
-        // position: absolute;
-        // opacity: 0;
-        // transform: scale(0);
+        position: absolute;
      }
 
-    img{
-      width: 50%;
+     .box4{
+      transform: rotate(30deg);
+     }
+     .box5{
+      transform: rotate(60deg);
+     }
+
+      img{
+        width: 70%;
+        height: 100%;
+      }
+    }
+
+    .informatie{
+      width: 60%;
+
+      h2{
+        text-align: left;
+        margin: 0px 0px 25px 0px;
+      }
+
+      h3{
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        margin: 0px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+
+      .cv{
+        padding: 10px 40px;
+        margin-bottom: 45px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
+
+      .contact{
+        padding: 10px 40px;
+        margin-left: 15px;
+        margin-bottom: 45px;
+        background-color: white;
+        color: black;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid white;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #000;
+          border: 5px solid black;
+          color: white;
+        }
+      }
+
+      .container {
+        width: 100%; /* Full width */
+        background-color: #707070; /* Grey background */
+      }
+
+      .skills {
+        text-align: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        color: black;
+      }
+
+      .front {
+        width: 90%; 
+        background-color: #fff;
+      }
+      
+      .design {
+        width: 80%; 
+        background-color: #fff;
+      }
+
+      .user {
+        width: 65%; 
+        background-color: #fff;
+      }
+    }
+  
+  }
+  
+  /*--------- contact sectie ---------------*/
+  .contactopnemen{
+    padding: 10px;
+    // text-align: center;
+
+
+    .formulier{
+      // width: 75%;
+      // display: grid;
+      // justify-content: center;
+      max-width: 1000px;
+      margin: auto;
+      
+      .fname{
+        background-color: #E2E2E2;
+        width: 1000px;
+        height: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: none;
+      }
+
+      .lname{
+        background-color: #E2E2E2;
+        // float: right;
+        width: 1000px;
+        height: 20px;
+        padding: 15px;
+        border: none;
+      }
+      
+      .message {
+        background-color: #E2E2E2;
+        width: 1000px;
+        height: 250px;
+        padding: 15px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .submit{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 20px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 45px;
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
     }
   }
-}
+  
+  /*--------- footer sectie ---------------*/
+  footer{
+    background-color: #FFCBCB;
+    padding: 10px;
+    // max-width: 1000px;
+    // margin: auto;
+    text-align: center;
+
+      .footer-logo{
+        padding: 25px;
+
+        .logo{
+          width: 7%;
+        }
+      }
+
+      .footer-menu a{
+        text-decoration: none;
+        padding: 25px 10px 25px 10px;
+      }
+
+      .footer-tekst{
+        padding: 25px 0px;
+      }
+
+      .footer-icons{
+        .icons{
+          width: 25px;
+          padding: 5px;
+        }
+
+        a{
+          text-decoration: none;
+        }
+          
+      }
+
+
+  }
+
+
+}//einde laptop
 
 /*Grote desktop*/
 @media only screen and (min-width: 1440px){
@@ -519,6 +932,7 @@ a{
   padding-right: 5%;
 
     h1{
+      font-size: 45px;
       margin-top: 175px;
       margin-left: 125px;
       z-index: 1;
@@ -614,14 +1028,232 @@ a{
   h2{
     font-family: 'Impact', Arial;
     font-size: 50px;
-    text-shadow: 2px 0px #FFCBCB;
+    text-shadow: 4px 0px #FFCBCB;
     text-align: center;
   }
 
-
-
 /*--------- about me sectie ---------------*/
+  .aboutme{
+    background-color: #E2E2E2;
+    padding: 50px;
+    height: 550px;
+
+    .about{
+      float: left;
+    }
+    
+    .foto{
+      width: 40%;
+      padding: 75px 0px 0px 0px;
+    
+      .box4, .box5 {
+        border: 3px;
+        border-style: solid;
+        // border-color: #707070;
+        border-color: white;
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+        margin-top: 50px;
+        position: absolute;
+
+        // opacity: 0;
+        // transform: scale(0);
+     }
+
+     .box4{
+      transform: rotate(30deg);
+     }
+     .box5{
+      transform: rotate(60deg);
+     }
+
+      img{
+        width: 60%;
+        height: 100%;
+      }
+    }
+
+    .informatie{
+      width: 60%;
+
+      h2{
+        text-align: left;
+        margin: 0px 0px 25px 0px;
+      }
+
+      h3{
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        margin: 0px;
+      }
+
+      p{
+        font-size: 16px;
+      }
+
+      .cv{
+        padding: 10px 40px;
+        margin-bottom: 45px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
+
+      .contact{
+        padding: 10px 40px;
+        margin-left: 15px;
+        margin-bottom: 45px;
+        background-color: white;
+        color: black;
+        font-family: 'Impact', Arial;
+        font-size: 24px;
+        border: 5px solid white;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+
+        &:hover{
+          background-color: #000;
+          border: 5px solid black;
+          color: white;
+        }
+      }
+
+      .container {
+        width: 100%; /* Full width */
+        background-color: #707070; /* Grey background */
+      }
+
+      .skills {
+        text-align: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        color: black;
+      }
+
+      .front {
+        width: 90%; 
+        background-color: #fff;
+      }
+      
+      .design {
+        width: 80%; 
+        background-color: #fff;
+      }
+
+      .user {
+        width: 65%; 
+        background-color: #fff;
+      }
+    }
+  
+  }
+  
+  /*--------- contact sectie ---------------*/
+  .contactopnemen{
+    padding: 10px;
+    // text-align: center;
 
 
+    .formulier{
+      // width: 75%;
+      // display: grid;
+      // justify-content: center;
+      max-width: 1000px;
+      margin: auto;
+      
+      .fname{
+        background-color: #E2E2E2;
+        width: 1000px;
+        height: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: none;
+      }
 
+      .lname{
+        background-color: #E2E2E2;
+        // float: right;
+        width: 1000px;
+        height: 20px;
+        padding: 15px;
+        border: none;
+      }
+      
+      .message {
+        background-color: #E2E2E2;
+        width: 1000px;
+        height: 250px;
+        padding: 15px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .submit{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        font-family: 'Impact', Arial;
+        font-size: 20px;
+        border: 5px solid black;
+        box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 45px;
+
+        &:hover{
+          background-color: #fff;
+          border: 5px solid white;
+          color: black;
+        }
+      }
+    }
+  }
+  
+  /*--------- footer sectie ---------------*/
+  footer{
+    background-color: #FFCBCB;
+    padding: 10px;
+    // max-width: 1000px;
+    // margin: auto;
+    text-align: center;
+
+      .footer-logo{
+        padding: 25px;
+
+        .logo{
+          width: 7%;
+        }
+      }
+
+      .footer-menu a{
+        text-decoration: none;
+        padding: 25px 10px 25px 10px;
+      }
+
+      .footer-tekst{
+        padding: 25px 0px;
+      }
+
+      .footer-icons{
+        .icons{
+          width: 25px;
+          padding: 5px;
+        }
+
+        a{
+          text-decoration: none;
+        }
+          
+      }
+  }
 } //einde van grote desktop
