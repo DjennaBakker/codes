@@ -86,7 +86,7 @@ a {
   transform: scaleY(0);
   transform-origin: bottom; }
   .hero h1 {
-    font-size: 28px;
+    font-size: 2px;
     margin-top: 115px;
     margin-left: 77px;
     z-index: 1;
