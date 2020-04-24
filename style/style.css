@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @font-face {
   font-family: 'Impact';
-  src: url("Impact.ttf"); }
+  src: url("impact.ttf"); }
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', Arial; }
@@ -89,7 +89,7 @@ a {
   transform: scaleY(0);
   transform-origin: bottom; }
   .hero h1 {
-    font-size: 30px !important;
+    font-size: 30px;
     margin-top: 115px;
     margin-left: 77px;
     z-index: 1;
