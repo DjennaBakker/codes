@@ -891,104 +891,69 @@ a{
     }
   } //einde .aboutme
   
-//   /*--------- contact sectie ---------------*/
-//   .contactopnemen{
-//     padding: 10px;
-//     // text-align: center;
+  /*--------- contact sectie ---------------*/
+  .contactopnemen{
+    padding: 10px;
 
-
-//     .formulier{
-//       // width: 75%;
-//       // display: grid;
-//       // justify-content: center;
-//       max-width: 1000px;
-//       margin: auto;
+    .formulier{
+      max-width: 1000px;
+      margin: auto;
       
-//       .fname{
-//         background-color: #E2E2E2;
-//         width: 1000px;
-//         height: 20px;
-//         margin-bottom: 20px;
-//         padding: 15px;
-//         border: none;
-//       }
+      .fname{
+        width: 1000px;
+      }
 
-//       .lname{
-//         background-color: #E2E2E2;
-//         // float: right;
-//         width: 1000px;
-//         height: 20px;
-//         padding: 15px;
-//         border: none;
-//       }
+      .lname{
+        width: 1000px;
+      }
       
-//       .message {
-//         background-color: #E2E2E2;
-//         width: 1000px;
-//         height: 250px;
-//         padding: 15px;
-//         border: none;
-//         margin-bottom: 20px;
-//       }
-
-//       .submit{
-//         padding: 10px 20px;
-//         background-color: black;
-//         color: white;
-//         font-family: 'Impact', Arial;
-//         font-size: 20px;
-//         border: 5px solid black;
-//         box-shadow: -2px 2px 19px -3px rgba(92,92,92,1);
-//         margin: 0 auto;
-//         display: block;
-//         margin-bottom: 45px;
-
-//         &:hover{
-//           background-color: #fff;
-//           border: 5px solid white;
-//           color: black;
-//         }
-//       }
-//     }
-//   }
+      .message {
+        width: 1000px;
+      }
+    }
+  } //einde .contactopnemen 
   
-//   /*--------- footer sectie ---------------*/
-//   footer{
-//     background-color: #FFCBCB;
-//     padding: 10px;
-//     // max-width: 1000px;
-//     // margin: auto;
-//     text-align: center;
+/*--------- footer sectie ---------------*/
+  footer{
 
-//       .footer-logo{
-//         padding: 25px;
+      .footer-logo{
+        padding: 25px;
 
-//         .logo{
-//           width: 7%;
-//         }
-//       }
+        .logo{
+          width: 6%;
+        }
+      }
 
-//       .footer-menu a{
-//         text-decoration: none;
-//         padding: 25px 10px 25px 10px;
-//       }
+      .footer-menu a{
+        text-decoration: none;
+        padding: 25px 10px 25px 10px;
 
-//       .footer-tekst{
-//         padding: 25px 0px;
-//       }
+        &:hover{
+          color: white;
+        }
+      }
 
-//       .footer-icons{
-//         .icons{
-//           width: 25px;
-//           padding: 5px;
-//         }
+      .footer-tekst a{
+        padding: 25px 0px;
 
-//         a{
-//           text-decoration: none;
-//         }
+        &:hover{
+          color: white;
+        }
+      }
+
+      .footer-icons{
+        .icons{
+          width: 25px;
+          padding: 5px;
+        }
+
+        a{
+          text-decoration: none;
+        }
           
-//       }
-//   }
+      }
+  } //einde footer
+  
   body h2{
     font-size: 40px;
   }

@@ -566,6 +566,39 @@ footer {
     .aboutme .informatie .titel-skills {
       margin: 25px 0px 10px 0px; }
 
+  /*--------- contact sectie ---------------*/
+  .contactopnemen {
+    padding: 10px; }
+    .contactopnemen .formulier {
+      max-width: 1000px;
+      margin: auto; }
+      .contactopnemen .formulier .fname {
+        width: 1000px; }
+      .contactopnemen .formulier .lname {
+        width: 1000px; }
+      .contactopnemen .formulier .message {
+        width: 1000px; }
+
+  /*--------- footer sectie ---------------*/
+  footer .footer-logo {
+    padding: 25px; }
+    footer .footer-logo .logo {
+      width: 6%; }
+  footer .footer-menu a {
+    text-decoration: none;
+    padding: 25px 10px 25px 10px; }
+    footer .footer-menu a:hover {
+      color: white; }
+  footer .footer-tekst a {
+    padding: 25px 0px; }
+    footer .footer-tekst a:hover {
+      color: white; }
+  footer .footer-icons .icons {
+    width: 25px;
+    padding: 5px; }
+  footer .footer-icons a {
+    text-decoration: none; }
+
   body h2 {
     font-size: 40px; } }
 
