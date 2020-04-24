@@ -13,7 +13,7 @@ body {
   body h2 {
     text-decoration: underline solid black;
     font-family: 'Impact', Arial;
-    font-size: 24px;
+    font-size: 32px;
     text-shadow: 2px 0px #FFCBCB;
     text-align: center; }
   body .vl {
@@ -86,7 +86,7 @@ a {
   transform: scaleY(0);
   transform-origin: bottom; }
   .hero h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 115px;
     margin-left: 77px;
     z-index: 1;
