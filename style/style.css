@@ -123,32 +123,14 @@ a {
 .aboutme {
   background-color: #E2E2E2;
   padding: 50px;
-  height: 550px; }
-  .aboutme .about {
-    float: left; }
+  height: 450px; }
   .aboutme .foto {
-    width: 40%;
-    padding: 75px 0px 0px 0px; }
+    display: none; }
     .aboutme .foto .box4, .aboutme .foto .box5 {
-      border: 3px;
-      border-style: solid;
-      border-color: white;
-      width: 200px;
-      height: 200px;
-      margin-left: 50px;
-      margin-top: 50px;
-      position: absolute; }
-    .aboutme .foto .box4 {
-      transform: rotate(30deg); }
-    .aboutme .foto .box5 {
-      transform: rotate(60deg); }
-    .aboutme .foto img {
-      width: 80%;
-      height: 100%; }
+      display: none; }
   .aboutme .informatie {
-    width: 60%; }
+    width: 100%; }
     .aboutme .informatie h2 {
-      text-align: left;
       margin: 0px 0px 25px 0px; }
     .aboutme .informatie h3 {
       font-family: 'Impact', Arial;
@@ -157,12 +139,12 @@ a {
     .aboutme .informatie p {
       font-size: 16px; }
     .aboutme .informatie .cv {
-      padding: 10px 40px;
-      margin-bottom: 45px;
+      padding: 5px 10px;
+      margin-bottom: 20px;
       background-color: black;
       color: white;
       font-family: 'Impact', Arial;
-      font-size: 24px;
+      font-size: 20px;
       border: 5px solid black;
       box-shadow: -2px 2px 19px -3px #5c5c5c; }
       .aboutme .informatie .cv:hover {
@@ -170,13 +152,13 @@ a {
         border: 5px solid white;
         color: black; }
     .aboutme .informatie .contact {
-      padding: 10px 40px;
+      padding: 5px 10px;
       margin-left: 15px;
-      margin-bottom: 45px;
+      margin-bottom: 20px;
       background-color: white;
       color: black;
       font-family: 'Impact', Arial;
-      font-size: 24px;
+      font-size: 20px;
       border: 5px solid white;
       box-shadow: -2px 2px 19px -3px #5c5c5c; }
       .aboutme .informatie .contact:hover {
@@ -206,24 +188,24 @@ a {
 .contactopnemen {
   padding: 10px; }
   .contactopnemen .formulier {
-    max-width: 500px;
+    max-width: 750px;
     margin: auto; }
     .contactopnemen .formulier .fname {
       background-color: #E2E2E2;
-      width: 500px;
+      width: 750px;
       height: 20px;
       margin-bottom: 20px;
       padding: 15px;
       border: none; }
     .contactopnemen .formulier .lname {
       background-color: #E2E2E2;
-      width: 500px;
+      width: 750px;
       height: 20px;
       padding: 15px;
       border: none; }
     .contactopnemen .formulier .message {
       background-color: #E2E2E2;
-      width: 500px;
+      width: 750px;
       height: 250px;
       padding: 15px;
       border: none;
