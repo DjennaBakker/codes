@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@font-face {
+  font-family: 'Impact';
+  src: url("Impact.ttf"); }
 html {
   box-sizing: border-box;
   font-family: 'Montserrat', Arial; }
@@ -86,7 +89,7 @@ a {
   transform: scaleY(0);
   transform-origin: bottom; }
   .hero h1 {
-    font-size: 2px;
+    font-size: 30px !important;
     margin-top: 115px;
     margin-left: 77px;
     z-index: 1;
@@ -286,7 +289,7 @@ footer {
     padding: 100px 35px 35px 35px;
     height: 500px; }
     .hero h1 {
-      font-size: 10px; }
+      font-size: 35px; }
     .hero .djenna {
       margin: 35px 0px 0px 150px; }
 
