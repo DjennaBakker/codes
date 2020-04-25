@@ -10,7 +10,8 @@ body {
   margin: 0px; }
   body h1 {
     font-family: 'Impact', Arial;
-    font-size: 35px; }
+    font-size: 35px;
+    letter-spacing: 3px; }
   body p {
     font-family: 'Montserrat'; }
   body h2 {
@@ -18,7 +19,10 @@ body {
     font-family: 'Impact', Arial;
     font-size: 32px;
     text-shadow: 2px 0px #FFCBCB;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 2px; }
+  body h3 {
+    letter-spacing: 1px; }
   body .vl {
     border-left: 6px solid black;
     height: 100px;
