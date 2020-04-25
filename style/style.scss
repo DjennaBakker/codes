@@ -180,6 +180,56 @@ body{
       }
   } //einde .hero
 
+/*--------- my work sectie ---------------*/ 
+  .work{
+    
+    .items-work{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 25px 0px 25px;
+
+      img{
+        width: 90%;
+        height: 90%;
+        padding: 20px;
+
+        &:hover{
+          transform: scale(1.03);
+          box-shadow: 6px 6px 10px 1px rgba(0,0,0,0.59);
+        }
+      }
+
+      #aida, #aida1, #aida2{
+        margin: 10px;
+      }
+    }
+  
+    a{
+      text-decoration: none;
+
+      &:hover{
+        color: #FFCBCB;
+      }
+    }
+
+    h3{
+      font-family: 'Impact', Arial;
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  } //einde .work
+
+  h2{
+    font-family: 'Impact', Arial;
+    font-size: 30px;
+    text-shadow: 2px 0px #FFCBCB;
+    text-align: center;
+  }
+  
   /*--------- about me sectie ---------------*/
     .aboutme{
       background-color: #E2E2E2;

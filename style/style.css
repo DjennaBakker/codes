@@ -126,6 +126,37 @@ a {
     opacity: 0;
     z-index: 1; }
 
+/*--------- my work sectie ---------------*/
+.work .items-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px 0px 25px; }
+  .work .items-work img {
+    width: 90%;
+    height: 90%;
+    padding: 20px; }
+    .work .items-work img:hover {
+      transform: scale(1.03);
+      box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.59); }
+  .work .items-work #aida, .work .items-work #aida1, .work .items-work #aida2 {
+    margin: 10px; }
+.work a {
+  text-decoration: none; }
+  .work a:hover {
+    color: #FFCBCB; }
+.work h3 {
+  font-family: 'Impact', Arial;
+  font-size: 18px; }
+.work p {
+  font-size: 16px; }
+
+h2 {
+  font-family: 'Impact', Arial;
+  font-size: 30px;
+  text-shadow: 2px 0px #FFCBCB;
+  text-align: center; }
+
 /*--------- about me sectie ---------------*/
 .aboutme {
   background-color: #E2E2E2;
